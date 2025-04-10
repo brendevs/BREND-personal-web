@@ -132,7 +132,7 @@
 
 .container2 { 
     border: none;
-    width: 100%;
+    width: 90%;
     padding: 0.1%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
@@ -164,3 +164,51 @@
     box-shadow: 0px 0px 15px 1px white;
 }
 
+/* enter yor name or fill up section i.n footer  or input text section*/
+
+.entryarea {
+    position: relative;
+    height: 78px;
+    line-height: 30px;
+    transition: 1s ease;
+}
+
+input {
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    font-size: 1.5em;
+    padding-left: 10.30px;
+    line-height: 10px;
+    border-radius: 5px;
+    border: 1px solid #a6a6a6;
+    background: transparent;
+    transition: 0.3s ease;
+    z-index: 1111;
+    color: rgb(188, 188, 188);
+    
+}
+.labelline{
+    position: absolute;
+    font-size: 1em;
+    
+    color: rgb(126, 126, 126);
+    background-color:  rgb(52, 52, 52);
+    padding: 0px 5px 0px 5px;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+
+input:focus +,
+input:valid +{
+    color: white;
+    border: 0.1px solid white;
+}
+input:focus + .labelline,
+input:valid + .labelline{
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-16px, -16px)scale(0.70);
+    z-index: 11111;
+}
