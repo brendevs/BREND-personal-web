@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth ;
+}
+
 .container { 
     padding: 1%;
     display: grid;
@@ -103,6 +107,23 @@
     
 }
 
+/* entry animation css javascript html */
+@keyframes appear {
+    from{
+        opacity:0;
+        scale:0.8;
+    }    
+    to { 
+        opacity: 1;
+        scale:1; 
+    }
+}
+.block {
+    animation: appear 5s linear;
+    animation-timeline: view(); 
+    animation-range: entry 10%;
+}
+
 /* end of card animation */
 
 
@@ -164,6 +185,8 @@
     box-shadow: 0px 0px 15px 1px white;
 }
 
+
+
 /* enter yor name or fill up section i.n footer  or input text section*/
 
 .entryarea {
@@ -175,8 +198,8 @@
 
 input {
     position: absolute;
-    width: 180px;
-    height: 30px;
+    width: 155px;
+    height: 28px;
     font-size: 1.5em;
     padding-left: 10.30px;
     line-height: 10px;
@@ -191,7 +214,6 @@ input {
 .labelline{
     position: absolute;
     font-size: 1em;
-    
     color: rgb(126, 126, 126);
     background-color:  rgb(52, 52, 52);
     padding: 0px 5px 0px 5px;
