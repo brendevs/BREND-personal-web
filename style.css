@@ -2,6 +2,9 @@ html {
     scroll-behavior: smooth ;
 }
 
+
+/* dynamic notch section */
+
 .navbar {
     border: none;
     width: 150px;
@@ -45,30 +48,37 @@ html {
     letter-spacing: 6px;
 }
 
-.container { 
-    padding: 1%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
-    gap: auto;
-    justify-content: center;
+
+
+
+
+
+
+/* all card animation section */
+
+/* entry animation css javascript html and portfolio */
+
+@keyframes appear {
+    from{
+        opacity:0;
+        scale:0.8;
+    }    
+    to { 
+        opacity: 1;
+        scale:1; 
+    }
 }
 
-.glow {
-    color: rgba(0, 0, 0, 0.649);
-    transition: 0.6s;
-}
-
-.glow:hover {
-    font-weight: bolder;
-    color: rgb(0, 0, 0);
-    text-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+.block {
+    animation: appear 5s linear;
+    animation-timeline: view(); 
+    animation-range: entry 10%;
 }
 
 
+/* card html css and javascript animation */
 
-/*  for portfolio */   
 
-/* card html animation */
 .cardhtml {
     width: 90%;
     height: 150px;
@@ -81,7 +91,6 @@ html {
     border-color: rgb(227, 227, 227);
     box-shadow: 0px 0px 20px 5px rgba(205, 205, 205, 0.101);
     transition: 0.4s;
-    
 }
 
 .cardhtml:hover {
@@ -94,7 +103,6 @@ html {
     justify-self: center;
     box-shadow: 0px 0px 60px 5px rgb(255, 255, 255);
     color: rgb(139, 27, 27);
-    
 }
 
 .cardcss {
@@ -147,32 +155,36 @@ html {
     justify-self: center;
     box-shadow: 0px 0px 60px 5px rgb(255, 255, 255);
     color: rgb(149, 151, 1);
-    
 }
 
-/* entry animation css javascript html */
-@keyframes appear {
-    from{
-        opacity:0;
-        scale:0.8;
-    }    
-    to { 
-        opacity: 1;
-        scale:1; 
-    }
-}
-.block {
-    animation: appear 5s linear;
-    animation-timeline: view(); 
-    animation-range: entry 10%;
+/* portfolio card animation */
+
+.container { 
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: auto;
+    justify-content: center;
 }
 
-/* end of card animation */
+.glow {
+    color: rgba(0, 0, 0, 0.649);
+    transition: 0.6s;
+}
+
+.glow:hover {
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+}
 
 
+
+   
 
 
 /* card html css javascript font */
+
 .card1text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
@@ -192,6 +204,8 @@ html {
 
 
 
+
+
 /* fortfolio */
 
 .container2 { 
@@ -205,7 +219,6 @@ html {
     justify-self: center;
 }
 
-
 .card2 {
     width: 300px;
     height: 140px;
@@ -217,18 +230,23 @@ html {
     border-color: rgb(227, 227, 227);
     background-size: 300px; background-repeat: no-repeat;
     box-shadow: 0px 0px 1px 0px black;
-    
 }
 
 .ani {
     box-shadow: 0px 0px 0px 0px white;
     transition: 0.5s;
 }
+
 .ani:hover {
     box-shadow: 0px 0px 15px 1px white;
 }
 
 
+
+
+
+
+/* all footers section  */
 
 /* enter yor name or fill up section i.n footer  or input text section*/
 
@@ -252,8 +270,8 @@ input {
     transition: 0.3s ease;
     z-index: 1111;
     color: rgb(188, 188, 188);
-    
 }
+
 .labelline{
     position: absolute;
     font-size: 1em;
@@ -269,6 +287,7 @@ input:valid +{
     color: white;
     border: 0.1px solid white;
 }
+
 input:focus + .labelline,
 input:valid + .labelline{
     color: white;
