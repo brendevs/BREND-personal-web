@@ -38,10 +38,10 @@ html {
 .navbutton:hover {
     border-radius: 11.5px;
     height: 32px;
-    width: 146.5px;
+    width: 147px;
     display: flex;
     margin: 1.5px 1.5px;
-    margin-left: 2px;
+    margin-left: 1.5px;
     background-color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
@@ -72,7 +72,7 @@ html {
 .block {
     animation: appear 5s linear;
     animation-timeline: view(); 
-    animation-range: entry 10%;
+    animation-range: entry 8%;
 }
 
 
@@ -250,6 +250,10 @@ html {
 
 /* enter yor name or fill up section i.n footer  or input text section*/
 
+.containerfillup {
+    margin-top: 10px;
+
+}
 .entryarea {
     position: relative;
     height: 78px;
@@ -260,7 +264,7 @@ html {
 input {
     position: absolute;
     width: 155px;
-    height: 28px;
+    height: 26.5px;
     font-size: 1.5em;
     padding-left: 10.30px;
     line-height: 10px;
@@ -285,12 +289,12 @@ input {
 input:focus +,
 input:valid +{
     color: white;
-    border: 0.1px solid white;
+    border: 0.1px solid rgb(255, 255, 255);
 }
 
 input:focus + .labelline,
 input:valid + .labelline{
-    color: white;
+    color: rgb(59, 159, 235);
     height: 30px;
     line-height: 30px;
     transform: translate(-16px, -16px)scale(0.70);
